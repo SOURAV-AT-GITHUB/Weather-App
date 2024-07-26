@@ -1,8 +1,9 @@
 //-------------------------Fetching Section----------------------------------
+import { apiKey } from "./env";
 async function fetchData(city) {
   try {
     let response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city},&APPID=ff03784da4bb29fe4dfa1df3455b20d7`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city},&APPID=${apiKey}`
     );
     let data = await response.json();
     document.getElementById(
@@ -16,7 +17,7 @@ async function fetchData(city) {
 async function fiveDaysForecast(city) {
   try {
     let response = await fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=ff03784da4bb29fe4dfa1df3455b20d7`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${apiKey}`
     );
     let data = await response.json();
     sortForecastData(data.list);
