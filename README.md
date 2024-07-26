@@ -1,4 +1,5 @@
 Weather App
+[Sample Image](Demo/Weather-App-Demo.png)
 Description:
 The Weather App is a fully responsive web application that allows users to easily access current weather information, detailed forecasts, and interactive maps for any city worldwide. Built using HTML, CSS, and JavaScript, this app offers a seamless and intuitive user experience on both desktop and mobile devices.
 
